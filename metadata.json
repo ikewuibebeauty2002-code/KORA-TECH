@@ -1,0 +1,8 @@
+{
+  "name": "KoraTech Electronics",
+  "description": "Nigeria's premier gadgets and electronics storefront for smartphones, laptops, tablets, audio gear, and power accessories with Paystack checkout and instant WhatsApp order dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

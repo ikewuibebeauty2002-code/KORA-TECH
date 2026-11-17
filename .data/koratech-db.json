@@ -1,0 +1,1854 @@
+{
+  "users": [
+    {
+      "id": "user-admin-1",
+      "full_name": "Chidi Okafor (Store Admin)",
+      "email": "admin@koratech.ng",
+      "phone": "+2348005672832",
+      "whatsapp_number": "2348005672832",
+      "password_hash": "$2b$10$Na8aa6zqez7TuYBQG5Ew4.ph3aYbJai8VELJNVwMFHXOMMAtHRK2e",
+      "role": "super_admin",
+      "created_at": "2026-09-17T10:09:00.832Z"
+    },
+    {
+      "id": "user-cust-1",
+      "full_name": "Adaeze Nwosu",
+      "email": "ada@example.ng",
+      "phone": "+2348031234567",
+      "whatsapp_number": "2348031234567",
+      "password_hash": "$2b$10$rK4e.NMT1WtfminYsbkjoeSBuUlqG9FOV4.d1YJhzTqkS4y3tImFy",
+      "role": "customer",
+      "created_at": "2026-10-17T10:09:00.931Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr-1",
+      "user_id": "user-cust-1",
+      "label": "Lekki Office",
+      "full_name": "Adaeze Nwosu",
+      "phone": "+2348031234567",
+      "whatsapp_number": "2348031234567",
+      "street_address": "28B Fola Osibo Road, Lekki Phase 1",
+      "city": "Lekki",
+      "state": "Lagos",
+      "additional_info": "Call reception upon arrival at gate",
+      "is_default": true,
+      "created_at": "2026-10-22T10:09:00.931Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-smartphones",
+      "name": "Smartphones",
+      "slug": "smartphones",
+      "description": "Official 5G flagship and everyday smartphones with manufacturer warranty across Nigeria.",
+      "image_url": "/src/assets/images/cat_smartphones_1794811185877.jpg",
+      "parent_id": null,
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": "cat-laptops",
+      "name": "Laptops",
+      "slug": "laptops",
+      "description": "High-performance laptops for software engineers, creators, students, and executives.",
+      "image_url": "/src/assets/images/cat_laptops_1794811186663.jpg",
+      "parent_id": null,
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": "cat-tablets",
+      "name": "Tablets",
+      "slug": "tablets",
+      "description": "Versatile Android and productivity tablets built for work, learning, and media.",
+      "image_url": "/src/assets/images/cat_tablets_ipads_1794811187089.jpg",
+      "parent_id": null,
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": "cat-ipads",
+      "name": "iPads",
+      "slug": "ipads",
+      "description": "Apple iPad Pro, iPad Air, and standard models with stylus and keyboard support.",
+      "image_url": "/src/assets/images/cat_tablets_ipads_1794811187089.jpg",
+      "parent_id": null,
+      "sort_order": 4,
+      "is_active": true
+    },
+    {
+      "id": "cat-new-arrivals",
+      "name": "New Arrivals",
+      "slug": "new-arrivals",
+      "description": "Freshly stocked electronics and latest-generation gadgets.",
+      "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+      "parent_id": null,
+      "sort_order": 5,
+      "is_active": true
+    },
+    {
+      "id": "cat-accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Essential power, audio, mounting, and protection gear for phones and laptops.",
+      "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+      "parent_id": null,
+      "sort_order": 6,
+      "is_active": true
+    },
+    {
+      "id": "sub-tripods",
+      "name": "Tripods",
+      "slug": "tripods",
+      "description": "Heavy-duty smartphone and camera tripods for creators and mobile filmmakers.",
+      "image_url": "/src/assets/images/cat_speakers_accessories_1794811188640.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 10,
+      "is_active": true
+    },
+    {
+      "id": "sub-earpieces",
+      "name": "Earpieces",
+      "slug": "earpieces",
+      "description": "Wired USB-C and wireless in-ear earpieces with clear voice microphones.",
+      "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 11,
+      "is_active": true
+    },
+    {
+      "id": "sub-airpods",
+      "name": "AirPods",
+      "slug": "airpods",
+      "description": "Apple AirPods and Spatial Audio wireless earbuds.",
+      "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 12,
+      "is_active": true
+    },
+    {
+      "id": "sub-headphones",
+      "name": "Headphones",
+      "slug": "headphones",
+      "description": "Active noise-cancelling studio and travel headphones.",
+      "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 13,
+      "is_active": true
+    },
+    {
+      "id": "sub-chargers",
+      "name": "Chargers",
+      "slug": "chargers",
+      "description": "GaN fast wall chargers, MagSafe pads, and braided USB-C cables.",
+      "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 14,
+      "is_active": true
+    },
+    {
+      "id": "sub-power-banks",
+      "name": "Power Banks",
+      "slug": "power-banks",
+      "description": "High-capacity fast-charging power banks engineered for uninterrupted work.",
+      "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 15,
+      "is_active": true
+    },
+    {
+      "id": "sub-smartwatches",
+      "name": "Smartwatches",
+      "slug": "smartwatches",
+      "description": "Fitness, health, and AMOLED calling smartwatches.",
+      "image_url": "/src/assets/images/cat_smartwatches_1794811188374.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 16,
+      "is_active": true
+    },
+    {
+      "id": "sub-bluetooth-speakers",
+      "name": "Bluetooth Speakers",
+      "slug": "bluetooth-speakers",
+      "description": "Portable waterproof Bluetooth speakers with deep bass.",
+      "image_url": "/src/assets/images/cat_speakers_accessories_1794811188640.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 17,
+      "is_active": true
+    },
+    {
+      "id": "sub-phone-accessories",
+      "name": "Phone Accessories",
+      "slug": "phone-accessories",
+      "description": "MagSafe cases, tempered glass, and magnetic car mounts.",
+      "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 18,
+      "is_active": true
+    },
+    {
+      "id": "sub-computer-accessories",
+      "name": "Computer Accessories",
+      "slug": "computer-accessories",
+      "description": "USB-C hubs, wireless mechanical keyboards, and ergonomic mice.",
+      "image_url": "/src/assets/images/cat_laptops_1794811186663.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 19,
+      "is_active": true
+    },
+    {
+      "id": "sub-itel-powergo",
+      "name": "ITEL PowerGo",
+      "slug": "itel-powergo",
+      "description": "Reliable, high-value ITEL PowerGo fast-charging power banks built for Nigeria.",
+      "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 20,
+      "is_active": true
+    },
+    {
+      "id": "sub-other-gadgets",
+      "name": "Other Electronic Gadgets",
+      "slug": "other-electronic-gadgets",
+      "description": "Smart home plugs, ring lights, SSD drives, and portable hubs.",
+      "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+      "parent_id": "cat-accessories",
+      "sort_order": 21,
+      "is_active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-iphone-16-pro",
+      "sku": "KT-IPH16P",
+      "name": "iPhone 16 Pro Titanium (Factory Unlocked)",
+      "slug": "iphone-16-pro-titanium",
+      "brand": "Apple",
+      "category_id": "cat-smartphones",
+      "subcategory_id": null,
+      "category_name": "Smartphones",
+      "category_slug": "smartphones",
+      "short_description": "Grade-5 titanium frame, A18 Pro chip, 4K120 Dolby Vision ProRAW camera system.",
+      "description": "Factory-unlocked global dual-SIM/eSIM iPhone 16 Pro sourced directly with verifiable Apple 1-year warranty. Engineered with a micro-blasted titanium chassis, 6.3-inch Super Retina XDR ProMotion display, and 48MP Fusion camera.",
+      "price_ngn": 1890000,
+      "original_price_ngn": 2050000,
+      "colors": [
+        "Natural Titanium",
+        "Desert Titanium",
+        "Black Titanium",
+        "White Titanium"
+      ],
+      "specifications": {
+        "Display": "6.3\" Super Retina XDR OLED, 120Hz",
+        "Processor": "Apple A18 Pro (3nm)",
+        "Camera": "48MP Main + 48MP Ultra Wide + 12MP 5x Telephoto",
+        "Connectivity": "5G, Wi-Fi 7, USB-C 10Gbps",
+        "Warranty": "12 Months Official Apple Care"
+      },
+      "features": [
+        "5G Ready",
+        "Fast Charging",
+        "Official Warranty",
+        "Factory Unlocked"
+      ],
+      "is_featured": true,
+      "is_best_seller": true,
+      "is_trending": true,
+      "is_new_arrival": true,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 2,
+      "sales_count": 48,
+      "stock_quantity": 14,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-iphone-16-pro-img-0",
+          "product_id": "prod-iphone-16-pro",
+          "image_url": "/src/assets/images/cat_smartphones_1794811185877.jpg",
+          "alt_text": "iPhone 16 Pro Titanium (Factory Unlocked)",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-iphone-16-pro-img-1",
+          "product_id": "prod-iphone-16-pro",
+          "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+          "alt_text": "iPhone 16 Pro Titanium (Factory Unlocked)",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-iph16p-256",
+          "product_id": "prod-iphone-16-pro",
+          "name": "256GB Storage",
+          "sku_suffix": "256",
+          "color": "",
+          "price_ngn": 1890000,
+          "original_price_ngn": 2050000,
+          "stock_quantity": 8,
+          "is_active": true
+        },
+        {
+          "id": "var-iph16p-512",
+          "product_id": "prod-iphone-16-pro",
+          "name": "512GB Storage",
+          "sku_suffix": "512",
+          "color": "",
+          "price_ngn": 2190000,
+          "original_price_ngn": 2350000,
+          "stock_quantity": 4,
+          "is_active": true
+        },
+        {
+          "id": "var-iph16p-1tb",
+          "product_id": "prod-iphone-16-pro",
+          "name": "1TB Storage",
+          "sku_suffix": "1TB",
+          "color": "",
+          "price_ngn": 2540000,
+          "original_price_ngn": null,
+          "stock_quantity": 2,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-07T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-samsung-s24-ultra",
+      "sku": "KT-S24U",
+      "name": "Samsung Galaxy S24 Ultra 5G + S-Pen",
+      "slug": "samsung-galaxy-s24-ultra-5g",
+      "brand": "Samsung",
+      "category_id": "cat-smartphones",
+      "subcategory_id": null,
+      "category_name": "Smartphones",
+      "category_slug": "smartphones",
+      "short_description": "200MP Quad Telephoto camera, integrated S-Pen, Snapdragon 8 Gen 3, 5000mAh battery.",
+      "description": "Designed for Nigerian executives and creators who demand desktop-grade power in their pocket. Includes factory-sealed Nigerian region dual-SIM support, Gorilla Armor anti-reflective glass, and 45W super fast charging support.",
+      "price_ngn": 1520000,
+      "original_price_ngn": 1680000,
+      "colors": [
+        "Titanium Gray",
+        "Titanium Black",
+        "Titanium Violet"
+      ],
+      "specifications": {
+        "Display": "6.8\" QHD+ Dynamic AMOLED 2X, 120Hz",
+        "Processor": "Snapdragon 8 Gen 3 for Galaxy",
+        "Camera": "200MP Wide + 50MP 5x Periscope",
+        "Battery": "5,000mAh with 45W Fast Charge",
+        "In the Box": "Device, S-Pen, USB-C Cable, SIM Pin"
+      },
+      "features": [
+        "5G Ready",
+        "S-Pen Included",
+        "200MP Camera",
+        "Official Warranty"
+      ],
+      "is_featured": true,
+      "is_best_seller": true,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 39,
+      "stock_quantity": 11,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-samsung-s24-ultra-img-0",
+          "product_id": "prod-samsung-s24-ultra",
+          "image_url": "/src/assets/images/cat_smartphones_1794811185877.jpg",
+          "alt_text": "Samsung Galaxy S24 Ultra 5G + S-Pen",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-samsung-s24-ultra-img-1",
+          "product_id": "prod-samsung-s24-ultra",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "Samsung Galaxy S24 Ultra 5G + S-Pen",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-s24u-256",
+          "product_id": "prod-samsung-s24-ultra",
+          "name": "12GB / 256GB",
+          "sku_suffix": "256",
+          "color": "",
+          "price_ngn": 1520000,
+          "original_price_ngn": 1680000,
+          "stock_quantity": 7,
+          "is_active": true
+        },
+        {
+          "id": "var-s24u-512",
+          "product_id": "prod-samsung-s24-ultra",
+          "name": "12GB / 512GB",
+          "sku_suffix": "512",
+          "color": "",
+          "price_ngn": 1740000,
+          "original_price_ngn": 1890000,
+          "stock_quantity": 4,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-12T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-macbook-air-m3",
+      "sku": "KT-MBA13M3",
+      "name": "Apple MacBook Air 13.6\" M3 (2025 Edition)",
+      "slug": "macbook-air-13-m3",
+      "brand": "Apple",
+      "category_id": "cat-laptops",
+      "subcategory_id": null,
+      "category_name": "Laptops",
+      "category_slug": "laptops",
+      "short_description": "18-hour battery life, silent fanless aluminum chassis, Liquid Retina display.",
+      "description": "Built for developers, founders, and designers across Nigeria. Runs effortlessly through power outages with up to 18 hours of real-world battery endurance and MagSafe 3 rapid charging.",
+      "price_ngn": 1780000,
+      "original_price_ngn": 1950000,
+      "colors": [
+        "Silver",
+        "Space Gray",
+        "Midnight",
+        "Starlight"
+      ],
+      "specifications": {
+        "Chip": "Apple M3 8-Core CPU / 10-Core GPU",
+        "Display": "13.6\" Liquid Retina True Tone",
+        "Battery": "Up to 18 Hours Wireless Web",
+        "Ports": "MagSafe 3, 2x Thunderbolt / USB 4, 3.5mm Jack",
+        "Weight": "1.24 kg Aluminum Unibody"
+      },
+      "features": [
+        "18hr Battery",
+        "Apple M3 Chip",
+        "MagSafe 3",
+        "Official Warranty"
+      ],
+      "is_featured": true,
+      "is_best_seller": true,
+      "is_trending": false,
+      "is_new_arrival": true,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 5,
+      "review_count": 1,
+      "sales_count": 31,
+      "stock_quantity": 9,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-macbook-air-m3-img-0",
+          "product_id": "prod-macbook-air-m3",
+          "image_url": "/src/assets/images/cat_laptops_1794811186663.jpg",
+          "alt_text": "Apple MacBook Air 13.6\" M3 (2025 Edition)",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-macbook-air-m3-img-1",
+          "product_id": "prod-macbook-air-m3",
+          "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+          "alt_text": "Apple MacBook Air 13.6\" M3 (2025 Edition)",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-mba-16-256",
+          "product_id": "prod-macbook-air-m3",
+          "name": "16GB RAM / 256GB SSD",
+          "sku_suffix": "16-256",
+          "color": "",
+          "price_ngn": 1780000,
+          "original_price_ngn": 1950000,
+          "stock_quantity": 5,
+          "is_active": true
+        },
+        {
+          "id": "var-mba-16-512",
+          "product_id": "prod-macbook-air-m3",
+          "name": "16GB RAM / 512GB SSD",
+          "sku_suffix": "16-512",
+          "color": "",
+          "price_ngn": 2080000,
+          "original_price_ngn": 2220000,
+          "stock_quantity": 4,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-04T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-hp-spectre-x360",
+      "sku": "KT-HPSPEC14",
+      "name": "HP Spectre x360 14 OLED 2-in-1 Workstation",
+      "slug": "hp-spectre-x360-14-oled",
+      "brand": "HP",
+      "category_id": "cat-laptops",
+      "subcategory_id": null,
+      "category_name": "Laptops",
+      "category_slug": "laptops",
+      "short_description": "Intel Core Ultra 7, 2.8K 120Hz OLED touchscreen, 360-degree convertible hinge.",
+      "description": "Precision CNC-machined convertible ultrabook with 9MP AI webcam, Bang & Olufsen quad speakers, and included rechargeable tilt stylus for architects and business leaders.",
+      "price_ngn": 1640000,
+      "original_price_ngn": 1820000,
+      "colors": [
+        "Nightfall Black",
+        "Slate Blue"
+      ],
+      "specifications": {
+        "Processor": "Intel Core Ultra 7 155H",
+        "Memory": "16GB LPDDR5x / 1TB PCIe Gen4 NVMe",
+        "Display": "14\" 2.8K (2880x1800) OLED Touch 120Hz",
+        "Graphics": "Intel Arc Graphics",
+        "Security": "Fingerprint Reader + IR Camera"
+      },
+      "features": [
+        "OLED Touch",
+        "2-in-1 Convertible",
+        "1TB SSD",
+        "Stylus Included"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": true,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.7,
+      "review_count": 1,
+      "sales_count": 18,
+      "stock_quantity": 6,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-hp-spectre-x360-img-0",
+          "product_id": "prod-hp-spectre-x360",
+          "image_url": "/src/assets/images/cat_laptops_1794811186663.jpg",
+          "alt_text": "HP Spectre x360 14 OLED 2-in-1 Workstation",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-hp-spectre-x360-img-1",
+          "product_id": "prod-hp-spectre-x360",
+          "image_url": "/src/assets/images/about_retail_showroom_1794811189520.jpg",
+          "alt_text": "HP Spectre x360 14 OLED 2-in-1 Workstation",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-hpspec-1tb",
+          "product_id": "prod-hp-spectre-x360",
+          "name": "16GB / 1TB OLED",
+          "sku_suffix": "1TB",
+          "color": "",
+          "price_ngn": 1640000,
+          "original_price_ngn": 1820000,
+          "stock_quantity": 6,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-05T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-ipad-pro-m4",
+      "sku": "KT-IPADPM4",
+      "name": "Apple iPad Pro 11\" M4 Ultra Retina XDR",
+      "slug": "apple-ipad-pro-11-m4",
+      "brand": "Apple",
+      "category_id": "cat-ipads",
+      "subcategory_id": null,
+      "category_name": "iPads",
+      "category_slug": "ipads",
+      "short_description": "Tandem OLED display, Apple M4 chip, ultra-thin 5.3mm aerospace aluminum enclosure.",
+      "description": "The thinnest Apple pro tablet ever engineered. Ideal for digital illustrators, video editors, and medical or engineering professionals needing desktop performance on the move.",
+      "price_ngn": 1480000,
+      "original_price_ngn": 1600000,
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "specifications": {
+        "Chip": "Apple M4 9-Core CPU",
+        "Display": "11\" Ultra Retina XDR Tandem OLED",
+        "Compatibility": "Apple Pencil Pro & Magic Keyboard",
+        "Connectivity": "Wi-Fi 6E + Thunderbolt / USB 4"
+      },
+      "features": [
+        "Tandem OLED",
+        "M4 Silicon",
+        "ProMotion 120Hz"
+      ],
+      "is_featured": true,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": true,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 1,
+      "sales_count": 22,
+      "stock_quantity": 8,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-ipad-pro-m4-img-0",
+          "product_id": "prod-ipad-pro-m4",
+          "image_url": "/src/assets/images/cat_tablets_ipads_1794811187089.jpg",
+          "alt_text": "Apple iPad Pro 11\" M4 Ultra Retina XDR",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-ipad-pro-m4-img-1",
+          "product_id": "prod-ipad-pro-m4",
+          "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+          "alt_text": "Apple iPad Pro 11\" M4 Ultra Retina XDR",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-ipad-256",
+          "product_id": "prod-ipad-pro-m4",
+          "name": "256GB Wi-Fi",
+          "sku_suffix": "256W",
+          "color": "",
+          "price_ngn": 1480000,
+          "original_price_ngn": 1600000,
+          "stock_quantity": 5,
+          "is_active": true
+        },
+        {
+          "id": "var-ipad-512",
+          "product_id": "prod-ipad-pro-m4",
+          "name": "512GB Wi-Fi + Cellular",
+          "sku_suffix": "512C",
+          "color": "",
+          "price_ngn": 1890000,
+          "original_price_ngn": null,
+          "stock_quantity": 3,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-09T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-galaxy-tab-s9-fe",
+      "sku": "KT-TABS9FE",
+      "name": "Samsung Galaxy Tab S9 FE + S-Pen (10.9\")",
+      "slug": "samsung-galaxy-tab-s9-fe",
+      "brand": "Samsung",
+      "category_id": "cat-tablets",
+      "subcategory_id": null,
+      "category_name": "Tablets",
+      "category_slug": "tablets",
+      "short_description": "IP68 water-resistant Android productivity tablet with S-Pen included in the box.",
+      "description": "Built for university study, business presentations, and travel streaming with an expansive 90Hz display, stereo AKG speakers, and 8,000mAh all-day battery.",
+      "price_ngn": 540000,
+      "original_price_ngn": 620000,
+      "colors": [
+        "Graphite Gray",
+        "Mint",
+        "Silver"
+      ],
+      "specifications": {
+        "Display": "10.9\" 90Hz Vision Booster IPS",
+        "Memory": "6GB RAM / 128GB (microSD up to 1TB)",
+        "Durability": "IP68 Water & Dust Resistant",
+        "Included": "Samsung S-Pen Included"
+      },
+      "features": [
+        "S-Pen Included",
+        "IP68 Rated",
+        "Expandable Storage"
+      ],
+      "is_featured": false,
+      "is_best_seller": true,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.7,
+      "review_count": 1,
+      "sales_count": 27,
+      "stock_quantity": 16,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-galaxy-tab-s9-fe-img-0",
+          "product_id": "prod-galaxy-tab-s9-fe",
+          "image_url": "/src/assets/images/cat_tablets_ipads_1794811187089.jpg",
+          "alt_text": "Samsung Galaxy Tab S9 FE + S-Pen (10.9\")",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "var-tabs9-128",
+          "product_id": "prod-galaxy-tab-s9-fe",
+          "name": "6GB / 128GB Wi-Fi",
+          "sku_suffix": "128",
+          "color": "",
+          "price_ngn": 540000,
+          "original_price_ngn": 620000,
+          "stock_quantity": 16,
+          "is_active": true
+        }
+      ],
+      "created_at": "2026-11-14T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-airpods-pro-2",
+      "sku": "KT-APP2C",
+      "name": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+      "slug": "apple-airpods-pro-2-usbc",
+      "brand": "Apple",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-airpods",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "AirPods",
+      "subcategory_slug": "airpods",
+      "short_description": "2x Active Noise Cancellation, Adaptive Audio, H2 chip, USB-C MagSafe charging case.",
+      "description": "Original sealed Apple AirPods Pro 2nd Generation with USB-C precision finding case, personalized spatial audio, and up to 30 hours total listening time.",
+      "price_ngn": 335000,
+      "original_price_ngn": 380000,
+      "colors": [
+        "White"
+      ],
+      "specifications": {
+        "Chip": "Apple H2 Headphone Chip",
+        "Audio": "Active Noise Cancellation & Transparency",
+        "Battery": "6 hrs buds / 30 hrs with MagSafe Case",
+        "WaterResistance": "IP54 Dust, Sweat & Water Resistant"
+      },
+      "features": [
+        "Active Noise Cancellation",
+        "USB-C MagSafe",
+        "Spatial Audio"
+      ],
+      "is_featured": true,
+      "is_best_seller": true,
+      "is_trending": true,
+      "is_new_arrival": false,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 2,
+      "sales_count": 64,
+      "stock_quantity": 24,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-airpods-pro-2-img-0",
+          "product_id": "prod-airpods-pro-2",
+          "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+          "alt_text": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-airpods-pro-2-img-1",
+          "product_id": "prod-airpods-pro-2",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-09T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-sony-wh1000xm5",
+      "sku": "KT-XM5",
+      "name": "Sony WH-1000XM5 Wireless ANC Headphones",
+      "slug": "sony-wh-1000xm5-anc",
+      "brand": "Sony",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-headphones",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Headphones",
+      "subcategory_slug": "headphones",
+      "short_description": "Industry-leading 8-microphone noise cancellation, 30-hour battery, multipoint Bluetooth.",
+      "description": "Crafted for deep focus in busy Lagos offices and long-haul flights. Features auto NC optimizer, crystal-clear call pickup, and ultra-plush synthetic leather earcups.",
+      "price_ngn": 485000,
+      "original_price_ngn": 540000,
+      "colors": [
+        "Silver",
+        "Midnight Black"
+      ],
+      "specifications": {
+        "Drivers": "30mm Precision Carbon Fiber",
+        "Battery": "Up to 30 Hours (3-min charge = 3 hrs)",
+        "Microphones": "8-Mic Precise Voice Pickup",
+        "Case": "Collapsible Hard Travel Case Included"
+      },
+      "features": [
+        "30hr Battery",
+        "Multipoint Bluetooth",
+        "Studio ANC"
+      ],
+      "is_featured": true,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 1,
+      "sales_count": 25,
+      "stock_quantity": 10,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-sony-wh1000xm5-img-0",
+          "product_id": "prod-sony-wh1000xm5",
+          "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+          "alt_text": "Sony WH-1000XM5 Wireless ANC Headphones",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-sony-wh1000xm5-img-1",
+          "product_id": "prod-sony-wh1000xm5",
+          "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+          "alt_text": "Sony WH-1000XM5 Wireless ANC Headphones",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-12T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-watch-s10-titanium",
+      "sku": "KT-WATCH10",
+      "name": "Amazfit Balance / Pro Titanium Smartwatch",
+      "slug": "pro-titanium-amoled-smartwatch",
+      "brand": "Amazfit",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-smartwatches",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Smartwatches",
+      "subcategory_slug": "smartwatches",
+      "short_description": "Brushed titanium bezel, 1.5\" sapphire AMOLED display, Bluetooth calling & 14-day battery.",
+      "description": "Combines executive wristwatch craftsmanship with dual-band GPS, 24/7 heart rate & SpO2 monitoring, and crisp Bluetooth call clarity for Android and iPhone.",
+      "price_ngn": 215000,
+      "original_price_ngn": 245000,
+      "colors": [
+        "Brushed Titanium",
+        "Obsidian Slate"
+      ],
+      "specifications": {
+        "Display": "1.5\" 1500-nit AMOLED Always-On",
+        "Battery": "Up to 14 Days Typical Use",
+        "WaterResistance": "5 ATM Swim-Proof",
+        "Compatibility": "iOS & Android"
+      },
+      "features": [
+        "Bluetooth Calling",
+        "14-Day Battery",
+        "5ATM Waterproof"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": true,
+      "is_new_arrival": true,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 29,
+      "stock_quantity": 18,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-watch-s10-titanium-img-0",
+          "product_id": "prod-watch-s10-titanium",
+          "image_url": "/src/assets/images/cat_smartwatches_1794811188374.jpg",
+          "alt_text": "Amazfit Balance / Pro Titanium Smartwatch",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-watch-s10-titanium-img-1",
+          "product_id": "prod-watch-s10-titanium",
+          "image_url": "/src/assets/images/hero_gadgets_flagship_1794811185456.jpg",
+          "alt_text": "Amazfit Balance / Pro Titanium Smartwatch",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-02T10:09:00.707Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-anker-prime-powerbank",
+      "sku": "KT-ANK27K",
+      "name": "Anker 737 PowerCore 24,000mAh 140W Laptop Power Bank",
+      "slug": "anker-737-140w-power-bank",
+      "brand": "Anker",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-power-banks",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Power Banks",
+      "subcategory_slug": "power-banks",
+      "short_description": "140W two-way USB-C PD 3.1 output — fast-charges MacBooks, laptops, and iPhones.",
+      "description": "Never let power cuts interrupt a client meeting or deployment. Equipped with smart digital wattage telemetry screen and ActiveShield 2.0 temperature protection.",
+      "price_ngn": 168000,
+      "original_price_ngn": 195000,
+      "colors": [
+        "Matte Charcoal"
+      ],
+      "specifications": {
+        "Capacity": "24,000mAh / 86.4Wh (Airline Safe)",
+        "Output": "2x USB-C (140W Max) + 1x USB-A (18W)",
+        "Recharge": "0–100% in 52 mins via 140W PD",
+        "Display": "Smart OLED Real-Time Power Meter"
+      },
+      "features": [
+        "Charges Laptops",
+        "140W Fast Charge",
+        "Digital Watt Meter"
+      ],
+      "is_featured": false,
+      "is_best_seller": true,
+      "is_trending": true,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 2,
+      "sales_count": 58,
+      "stock_quantity": 21,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-anker-prime-powerbank-img-0",
+          "product_id": "prod-anker-prime-powerbank",
+          "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+          "alt_text": "Anker 737 PowerCore 24,000mAh 140W Laptop Power Bank",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-anker-prime-powerbank-img-1",
+          "product_id": "prod-anker-prime-powerbank",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "Anker 737 PowerCore 24,000mAh 140W Laptop Power Bank",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-03T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-itel-powergo-20k",
+      "sku": "KT-ITEL20K",
+      "name": "ITEL PowerGo 20,000mAh 22.5W Fast-Charge Power Bank",
+      "slug": "itel-powergo-20000mah",
+      "brand": "ITEL",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-itel-powergo",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "ITEL PowerGo",
+      "subcategory_slug": "itel-powergo",
+      "short_description": "Reliable high-value ITEL PowerGo 20,000mAh with dual USB + Type-C fast output.",
+      "description": "Nigeria’s favorite everyday backup power companion. Charges smartphones up to 4 full cycles with multi-protect surge defense and built-in digital charge percentage display.",
+      "price_ngn": 29500,
+      "original_price_ngn": 36000,
+      "colors": [
+        "Deep Slate",
+        "Obsidian Black"
+      ],
+      "specifications": {
+        "Capacity": "20,000mAh High-Density Li-Polymer",
+        "Output": "22.5W Super Charge + USB-C PD",
+        "Ports": "2x USB-A Out, 1x USB-C Bi-directional",
+        "Warranty": "12 Months Carlcare Nigeria Warranty"
+      },
+      "features": [
+        "22.5W Fast Charge",
+        "4x Phone Charges",
+        "Surge Protection"
+      ],
+      "is_featured": false,
+      "is_best_seller": true,
+      "is_trending": true,
+      "is_new_arrival": false,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.7,
+      "review_count": 2,
+      "sales_count": 115,
+      "stock_quantity": 42,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-itel-powergo-20k-img-0",
+          "product_id": "prod-itel-powergo-20k",
+          "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+          "alt_text": "ITEL PowerGo 20,000mAh 22.5W Fast-Charge Power Bank",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-04T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-gan-65w-charger",
+      "sku": "KT-GAN65W",
+      "name": "Anker Nano II 65W 3-Port GaN Fast Wall Charger + Cable",
+      "slug": "anker-nano-65w-gan-charger",
+      "brand": "Anker",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-chargers",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Chargers",
+      "subcategory_slug": "chargers",
+      "short_description": "Ultra-compact GaN II 3-port fast charger with UK/NG 3-pin plug and 100W braided cable.",
+      "description": "Replaces bulky laptop bricks and phone adapters with a single pocket-sized Gallium Nitride charger capable of powering a laptop, smartphone, and earbuds simultaneously.",
+      "price_ngn": 48000,
+      "original_price_ngn": 58000,
+      "colors": [
+        "Arctic White",
+        "Graphite"
+      ],
+      "specifications": {
+        "Power": "65W Max GaN II Output",
+        "Ports": "2x USB-C PD + 1x USB-A",
+        "Cable": "1.8m 100W Braided USB-C Cable Included",
+        "Plug": "Nigerian/UK Type-G Surge-Protected Plug"
+      },
+      "features": [
+        "GaN II Tech",
+        "65W Laptop Support",
+        "Braided Cable Included"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 47,
+      "stock_quantity": 34,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-gan-65w-charger-img-0",
+          "product_id": "prod-gan-65w-charger",
+          "image_url": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+          "alt_text": "Anker Nano II 65W 3-Port GaN Fast Wall Charger + Cable",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-06T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-korapro-tripod",
+      "sku": "KT-TRIPODPRO",
+      "name": "KoraPro 165cm Aluminum Creator Tripod + Wireless Remote",
+      "slug": "korapro-165cm-creator-tripod",
+      "brand": "KoraPro",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-tripods",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Tripods",
+      "subcategory_slug": "tripods",
+      "short_description": "Anodized aircraft aluminum tripod with 360° ball head, phone mount, and Bluetooth shutter.",
+      "description": "Engineered for content creators, YouTubers, and product photographers. Extends from 42cm travel fold up to 165cm eye-level studio height with rock-solid rubberized feet.",
+      "price_ngn": 42000,
+      "original_price_ngn": 52000,
+      "colors": [
+        "Anodized Titanium",
+        "Matte Black"
+      ],
+      "specifications": {
+        "Material": "CNC Aluminum Alloy",
+        "Height": "42cm folded – 165cm max",
+        "Load": "Up to 3.5 kg (Phones & Mirrorless Cameras)",
+        "Extras": "Bluetooth Remote + Padded Carry Bag"
+      },
+      "features": [
+        "360° Ball Head",
+        "Bluetooth Shutter",
+        "Universal Phone Clamp"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": true,
+      "is_new_arrival": true,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 36,
+      "stock_quantity": 27,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-korapro-tripod-img-0",
+          "product_id": "prod-korapro-tripod",
+          "image_url": "/src/assets/images/cat_speakers_accessories_1794811188640.jpg",
+          "alt_text": "KoraPro 165cm Aluminum Creator Tripod + Wireless Remote",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-korapro-tripod-img-1",
+          "product_id": "prod-korapro-tripod",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "KoraPro 165cm Aluminum Creator Tripod + Wireless Remote",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-09T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-bluetooth-speaker-pulse",
+      "sku": "KT-SPK360",
+      "name": "SoundCore Motion 360 Waterproof Bluetooth Speaker",
+      "slug": "soundcore-motion-360-speaker",
+      "brand": "Soundcore",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-bluetooth-speakers",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Bluetooth Speakers",
+      "subcategory_slug": "bluetooth-speakers",
+      "short_description": "30W 360-degree room-filling acoustic sound, IPX7 waterproof, 16-hour playtime.",
+      "description": "Woven acoustic fabric cylinder housing dual neodymium drivers and passive bass radiators for punchy indoor and outdoor sound.",
+      "price_ngn": 88000,
+      "original_price_ngn": 105000,
+      "colors": [
+        "Charcoal Fabric",
+        "Ocean Blue"
+      ],
+      "specifications": {
+        "Audio": "30W Stereo 360° BassUp",
+        "Battery": "16 Hours Continuous Play",
+        "Protection": "IPX7 Waterproof",
+        "Bluetooth": "Bluetooth 5.3 + AUX-In"
+      },
+      "features": [
+        "30W Deep Bass",
+        "IPX7 Waterproof",
+        "16hr Playtime"
+      ],
+      "is_featured": true,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 33,
+      "stock_quantity": 19,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-bluetooth-speaker-pulse-img-0",
+          "product_id": "prod-bluetooth-speaker-pulse",
+          "image_url": "/src/assets/images/cat_speakers_accessories_1794811188640.jpg",
+          "alt_text": "SoundCore Motion 360 Waterproof Bluetooth Speaker",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-06T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-usbc-earpiece-pro",
+      "sku": "KT-EARPRO",
+      "name": "JBL Tune 310C Hi-Res USB-C Wired Earpiece with Mic",
+      "slug": "jbl-tune-310c-usbc-earpiece",
+      "brand": "JBL",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-earpieces",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Earpieces",
+      "subcategory_slug": "earpieces",
+      "short_description": "Zero-latency Hi-Res USB-C DAC audio with 3-button remote & tangle-free flat cable.",
+      "description": "Compatible with iPhone 15/16 series, Samsung Galaxy, iPads, and USB-C laptops. Delivers crisp studio voice calls and signature Pure Bass tuning.",
+      "price_ngn": 24500,
+      "original_price_ngn": 29000,
+      "colors": [
+        "Matte White",
+        "Jet Black"
+      ],
+      "specifications": {
+        "Connector": "USB-C Digital DAC (24-bit/96kHz)",
+        "Drivers": "9mm Dynamic Drivers",
+        "Cable": "1.2m Tangle-Free Flat Cable"
+      },
+      "features": [
+        "Zero Latency",
+        "Built-in DAC",
+        "iPhone 15/16 & Android"
+      ],
+      "is_featured": false,
+      "is_best_seller": true,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.7,
+      "review_count": 1,
+      "sales_count": 72,
+      "stock_quantity": 48,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-usbc-earpiece-pro-img-0",
+          "product_id": "prod-usbc-earpiece-pro",
+          "image_url": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+          "alt_text": "JBL Tune 310C Hi-Res USB-C Wired Earpiece with Mic",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-03T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-magsafe-kit",
+      "sku": "KT-MAGKIT",
+      "name": "KoraArmor MagSafe Kevlar Case + Sapphire Tempered Glass",
+      "slug": "koraarmor-magsafe-kevlar-kit",
+      "brand": "KoraPro",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-phone-accessories",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Phone Accessories",
+      "subcategory_slug": "phone-accessories",
+      "short_description": "Drop-tested aramid fiber MagSafe protection bundle with dust-free applicator glass.",
+      "description": "Precision-molded N52 magnetic ring array for rock-solid MagSafe wallet and car mount grip without adding bulk.",
+      "price_ngn": 26000,
+      "original_price_ngn": 32000,
+      "colors": [
+        "Carbon Black",
+        "Navy Blue"
+      ],
+      "specifications": {
+        "Compatibility": "iPhone 15 Pro / 16 Pro / 16 Pro Max",
+        "MagnetStrength": "N52 Strong MagSafe Array",
+        "Glass": "9H Anti-Fingerprint Oleophobic"
+      },
+      "features": [
+        "MagSafe N52",
+        "Drop Tested 2.5m",
+        "Glass Included"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 4.8,
+      "review_count": 1,
+      "sales_count": 41,
+      "stock_quantity": 35,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-magsafe-kit-img-0",
+          "product_id": "prod-magsafe-kit",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "KoraArmor MagSafe Kevlar Case + Sapphire Tempered Glass",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-magsafe-kit-img-1",
+          "product_id": "prod-magsafe-kit",
+          "image_url": "/src/assets/images/cat_smartphones_1794811185877.jpg",
+          "alt_text": "KoraArmor MagSafe Kevlar Case + Sapphire Tempered Glass",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-14T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-usbc-hub-9in1",
+      "sku": "KT-HUB9",
+      "name": "Ugreen Revodok Pro 9-in-1 4K60Hz USB-C Aluminum Hub",
+      "slug": "ugreen-9in1-usbc-workstation-hub",
+      "brand": "Ugreen",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-computer-accessories",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Computer Accessories",
+      "subcategory_slug": "computer-accessories",
+      "short_description": "Dual HDMI 4K, Gigabit Ethernet, 100W PD pass-through, SD/TF & 10Gbps USB-A/C ports.",
+      "description": "Transform any MacBook, iPad, or Windows ultrabook into a multi-monitor workstation with rock-solid wired internet and ultra-fast SSD file transfers.",
+      "price_ngn": 58000,
+      "original_price_ngn": 68000,
+      "colors": [
+        "Space Gray"
+      ],
+      "specifications": {
+        "Video": "4K@60Hz HDMI",
+        "Power": "100W USB-C Power Delivery Pass-Through",
+        "Network": "1000Mbps RJ45 Gigabit Ethernet",
+        "Data": "10Gbps USB-C + 2x USB 3.2 + SD/TF 3.0"
+      },
+      "features": [
+        "4K@60Hz HDMI",
+        "100W PD",
+        "Gigabit Ethernet"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": false,
+      "is_new_arrival": false,
+      "is_recommended": true,
+      "is_published": true,
+      "rating_avg": 4.9,
+      "review_count": 1,
+      "sales_count": 28,
+      "stock_quantity": 22,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-usbc-hub-9in1-img-0",
+          "product_id": "prod-usbc-hub-9in1",
+          "image_url": "/src/assets/images/cat_laptops_1794811186663.jpg",
+          "alt_text": "Ugreen Revodok Pro 9-in-1 4K60Hz USB-C Aluminum Hub",
+          "is_primary": true,
+          "sort_order": 0
+        },
+        {
+          "id": "prod-usbc-hub-9in1-img-1",
+          "product_id": "prod-usbc-hub-9in1",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "Ugreen Revodok Pro 9-in-1 4K60Hz USB-C Aluminum Hub",
+          "is_primary": false,
+          "sort_order": 1
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-01T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    },
+    {
+      "id": "prod-ssd-t7-shield",
+      "sku": "KT-SSDT7",
+      "name": "Samsung T7 Shield 1TB Rugged Portable NVMe SSD",
+      "slug": "samsung-t7-shield-1tb-ssd",
+      "brand": "Samsung",
+      "category_id": "cat-accessories",
+      "subcategory_id": "sub-other-gadgets",
+      "category_name": "Accessories",
+      "category_slug": "accessories",
+      "subcategory_name": "Other Electronic Gadgets",
+      "subcategory_slug": "other-electronic-gadgets",
+      "short_description": "1,050MB/s read/write, IP65 water & dust resistant, 3m drop protection.",
+      "description": "Direct ProRes 4K120 recording ready for iPhone 15/16 Pro, MacBooks, and Windows editing rigs.",
+      "price_ngn": 155000,
+      "original_price_ngn": 178000,
+      "colors": [
+        "Black",
+        "Blue"
+      ],
+      "specifications": {
+        "Capacity": "1TB NVMe USB 3.2 Gen 2",
+        "Speed": "Up to 1,050 MB/s",
+        "Durability": "IP65 + 3m Drop Rated"
+      },
+      "features": [
+        "1050MB/s Speed",
+        "ProRes Direct",
+        "IP65 Rugged"
+      ],
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_trending": true,
+      "is_new_arrival": true,
+      "is_recommended": false,
+      "is_published": true,
+      "rating_avg": 5,
+      "review_count": 1,
+      "sales_count": 19,
+      "stock_quantity": 3,
+      "low_stock_threshold": 5,
+      "images": [
+        {
+          "id": "prod-ssd-t7-shield-img-0",
+          "product_id": "prod-ssd-t7-shield",
+          "image_url": "/src/assets/images/promo_deals_bundle_1794811188657.jpg",
+          "alt_text": "Samsung T7 Shield 1TB Rugged Portable NVMe SSD",
+          "is_primary": true,
+          "sort_order": 0
+        }
+      ],
+      "variants": [],
+      "created_at": "2026-11-06T10:09:00.708Z",
+      "updated_at": "2026-11-16T10:09:00.707Z"
+    }
+  ],
+  "carts": [
+    {
+      "id": "cart-458d3b94-d18f-460b-814b-bf62e0ae608e",
+      "user_id": null,
+      "guest_token": "guest-4f2469d1-0e76-439a-bcc9-2c9dc076c747",
+      "updated_at": "2026-11-16T10:12:51.949Z"
+    },
+    {
+      "id": "cart-0ce513b1-ab7f-4b05-a924-bda4e67e180e",
+      "user_id": null,
+      "guest_token": "verify_guest_1794824946848",
+      "updated_at": "2026-11-16T10:29:06.855Z"
+    },
+    {
+      "id": "cart-9f05544d-f097-4322-accd-ebc01c2ccb4b",
+      "user_id": null,
+      "guest_token": "verify_guest_1794825028552",
+      "updated_at": "2026-11-16T10:30:28.561Z"
+    }
+  ],
+  "cart_items": [
+    {
+      "id": "ci-1c505147-60aa-4fa7-b335-bb993072e384",
+      "cart_id": "cart-458d3b94-d18f-460b-814b-bf62e0ae608e",
+      "product_id": "prod-airpods-pro-2",
+      "variant_id": null,
+      "selected_color": "White",
+      "quantity": 1,
+      "created_at": "2026-11-16T10:12:51.949Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-722c71ab-400b-402c-9a53-ee4d95faebf4",
+      "order_number": "KT-20261116-4292",
+      "user_id": null,
+      "guest_token": "guest-4f2469d1-0e76-439a-bcc9-2c9dc076c747",
+      "customer_name": "IKEWUIBE BEAUTY",
+      "customer_email": "ikewuibebeauty2002@gmail.com",
+      "customer_phone": "09036752465",
+      "customer_whatsapp": "09036752465",
+      "delivery_address": "Owerri imo state",
+      "delivery_city": "Owerri",
+      "delivery_state": "Imo",
+      "delivery_notes": "",
+      "coupon_code": null,
+      "subtotal_ngn": 335000,
+      "delivery_fee_ngn": 6500,
+      "discount_ngn": 0,
+      "total_ngn": 341500,
+      "status": "Pending Payment",
+      "payment_status": "pending",
+      "paystack_reference": "KTREF-20261116-FCD0015F",
+      "stock_deducted": false,
+      "stock_restored": false,
+      "items": [
+        {
+          "id": "oi-3fd3b3a4-1c0c-4ad9-90fc-f7ac73d57479",
+          "order_id": "ord-722c71ab-400b-402c-9a53-ee4d95faebf4",
+          "product_id": "prod-airpods-pro-2",
+          "variant_id": null,
+          "product_name": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+          "product_image": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+          "selected_color": "White",
+          "selected_variant": "",
+          "unit_price_ngn": 335000,
+          "quantity": 1,
+          "line_total_ngn": 335000
+        }
+      ],
+      "delivery": {
+        "id": "del-24f62eca-fa07-4f9b-a64b-e1236f4ffa9f",
+        "order_id": "ord-722c71ab-400b-402c-9a53-ee4d95faebf4",
+        "courier_name": "KoraTech Express Dispatch",
+        "tracking_number": "",
+        "dispatched_at": null,
+        "delivered_at": null,
+        "delivery_notes": "",
+        "updated_at": "2026-11-16T10:13:47.509Z"
+      },
+      "created_at": "2026-11-16T10:13:47.509Z",
+      "updated_at": "2026-11-16T10:13:47.509Z"
+    },
+    {
+      "id": "ord-1001",
+      "order_number": "KT-20261110-4821",
+      "user_id": "user-cust-1",
+      "guest_token": null,
+      "customer_name": "Adaeze Nwosu",
+      "customer_email": "ada@example.ng",
+      "customer_phone": "+2348031234567",
+      "customer_whatsapp": "2348031234567",
+      "delivery_address": "28B Fola Osibo Road, Lekki Phase 1",
+      "delivery_city": "Lekki",
+      "delivery_state": "Lagos",
+      "delivery_notes": "Deliver before 4 PM",
+      "coupon_code": null,
+      "subtotal_ngn": 335000,
+      "delivery_fee_ngn": 3500,
+      "discount_ngn": 0,
+      "total_ngn": 338500,
+      "status": "Delivered",
+      "payment_status": "paid",
+      "paystack_reference": "KT-REF-1001-VERIFIED",
+      "stock_deducted": true,
+      "stock_restored": false,
+      "items": [
+        {
+          "id": "oi-1001",
+          "order_id": "ord-1001",
+          "product_id": "prod-airpods-pro-2",
+          "variant_id": null,
+          "product_name": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+          "product_image": "/src/assets/images/cat_audio_airpods_1794811187517.jpg",
+          "selected_color": "White",
+          "selected_variant": "",
+          "unit_price_ngn": 335000,
+          "quantity": 1,
+          "line_total_ngn": 335000
+        }
+      ],
+      "delivery": {
+        "id": "del-1001",
+        "order_id": "ord-1001",
+        "courier_name": "KoraTech Lagos Express",
+        "tracking_number": "KT-LG-88912",
+        "dispatched_at": "2026-11-12T10:09:00.931Z",
+        "delivered_at": "2026-11-13T10:09:00.931Z",
+        "delivery_notes": "Signed by recipient",
+        "updated_at": "2026-11-13T10:09:00.931Z"
+      },
+      "created_at": "2026-11-11T10:09:00.931Z",
+      "updated_at": "2026-11-13T10:09:00.931Z"
+    },
+    {
+      "id": "ord-1002",
+      "order_number": "KT-20261113-7390",
+      "user_id": "user-cust-1",
+      "guest_token": null,
+      "customer_name": "Adaeze Nwosu",
+      "customer_email": "ada@example.ng",
+      "customer_phone": "+2348031234567",
+      "customer_whatsapp": "2348031234567",
+      "delivery_address": "28B Fola Osibo Road, Lekki Phase 1",
+      "delivery_city": "Lekki",
+      "delivery_state": "Lagos",
+      "delivery_notes": "",
+      "coupon_code": "KORA5",
+      "subtotal_ngn": 168000,
+      "delivery_fee_ngn": 3500,
+      "discount_ngn": 8400,
+      "total_ngn": 163100,
+      "status": "Shipped",
+      "payment_status": "paid",
+      "paystack_reference": "KT-REF-1002-VERIFIED",
+      "stock_deducted": true,
+      "stock_restored": false,
+      "items": [
+        {
+          "id": "oi-1002",
+          "order_id": "ord-1002",
+          "product_id": "prod-anker-prime-powerbank",
+          "variant_id": null,
+          "product_name": "Anker 737 PowerCore 24,000mAh 140W Laptop Power Bank",
+          "product_image": "/src/assets/images/cat_powerbanks_chargers_1794811188107.jpg",
+          "selected_color": "Matte Charcoal",
+          "selected_variant": "",
+          "unit_price_ngn": 168000,
+          "quantity": 1,
+          "line_total_ngn": 168000
+        }
+      ],
+      "delivery": {
+        "id": "del-1002",
+        "order_id": "ord-1002",
+        "courier_name": "KoraTech Lagos Express",
+        "tracking_number": "KT-LG-90144",
+        "dispatched_at": "2026-11-15T10:09:00.931Z",
+        "delivered_at": null,
+        "delivery_notes": "Out for afternoon rider dispatch",
+        "updated_at": "2026-11-15T10:09:00.931Z"
+      },
+      "created_at": "2026-11-14T10:09:00.931Z",
+      "updated_at": "2026-11-15T10:09:00.931Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-fd6491d1-253b-405f-9462-1903e2201456",
+      "order_id": "ord-722c71ab-400b-402c-9a53-ee4d95faebf4",
+      "order_number": "KT-20261116-4292",
+      "customer_name": "IKEWUIBE BEAUTY",
+      "reference": "KTREF-20261116-FCD0015F",
+      "amount_kobo": 34150000,
+      "currency": "NGN",
+      "status": "initialized",
+      "payment_method": "paystack",
+      "channel": "",
+      "gateway_response": "Initialized",
+      "verified_at": null,
+      "created_at": "2026-11-16T10:13:48.266Z"
+    },
+    {
+      "id": "pay-1001",
+      "order_id": "ord-1001",
+      "order_number": "KT-20261110-4821",
+      "customer_name": "Adaeze Nwosu",
+      "reference": "KT-REF-1001-VERIFIED",
+      "amount_kobo": 33850000,
+      "currency": "NGN",
+      "status": "success",
+      "payment_method": "paystack",
+      "channel": "card",
+      "gateway_response": "Approved",
+      "verified_at": "2026-11-11T10:09:00.931Z",
+      "created_at": "2026-11-11T10:09:00.931Z"
+    },
+    {
+      "id": "pay-1002",
+      "order_id": "ord-1002",
+      "order_number": "KT-20261113-7390",
+      "customer_name": "Adaeze Nwosu",
+      "reference": "KT-REF-1002-VERIFIED",
+      "amount_kobo": 16310000,
+      "currency": "NGN",
+      "status": "success",
+      "payment_method": "paystack",
+      "channel": "bank_transfer",
+      "gateway_response": "Approved",
+      "verified_at": "2026-11-14T10:09:00.931Z",
+      "created_at": "2026-11-14T10:09:00.931Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "product_id": "prod-airpods-pro-2",
+      "product_name": "Apple AirPods Pro (2nd Gen, USB-C MagSafe)",
+      "user_id": "user-cust-1",
+      "order_id": "ord-1001",
+      "reviewer_name": "Adaeze Nwosu",
+      "rating": 5,
+      "title": "100% genuine Apple seal and same-day Lekki delivery",
+      "comment": "Verified the serial number directly on Apple Check Coverage right out of the box. Paystack checkout went through smoothly and dispatch rider called within 3 hours.",
+      "verified_purchase": true,
+      "moderation_status": "approved",
+      "created_at": "2026-11-14T10:09:00.931Z"
+    },
+    {
+      "id": "rev-2",
+      "product_id": "prod-iphone-16-pro",
+      "product_name": "iPhone 16 Pro Titanium (Factory Unlocked)",
+      "user_id": null,
+      "order_id": null,
+      "reviewer_name": "Tunde Bakare",
+      "rating": 5,
+      "title": "Clean factory unlocked unit — works great on MTN 5G",
+      "comment": "Picked up the Natural Titanium 256GB for Abuja delivery. Packaging was spotless and WhatsApp confirmation after payment was super responsive.",
+      "verified_purchase": true,
+      "moderation_status": "approved",
+      "created_at": "2026-11-10T10:09:00.931Z"
+    },
+    {
+      "id": "rev-3",
+      "product_id": "prod-anker-prime-powerbank",
+      "product_name": "Anker 737 PowerCore 24,000mAh 140W Laptop Power Bank",
+      "user_id": null,
+      "order_id": null,
+      "reviewer_name": "Ibrahim Suleiman",
+      "rating": 5,
+      "title": "Lifesaver for my MacBook Pro during grid downtime",
+      "comment": "Outputs a steady 100W+ over USB-C and the wattage display is super accurate. Charges my laptop from 15% to 90% easily.",
+      "verified_purchase": true,
+      "moderation_status": "approved",
+      "created_at": "2026-11-08T10:09:00.931Z"
+    },
+    {
+      "id": "rev-4",
+      "product_id": "prod-itel-powergo-20k",
+      "product_name": "ITEL PowerGo 20,000mAh 22.5W Fast-Charge Power Bank",
+      "user_id": null,
+      "order_id": null,
+      "reviewer_name": "Chisom Eze",
+      "rating": 5,
+      "title": "Best value 20,000mAh power bank in Lagos",
+      "comment": "Bought two units for family. Fast charging kicks in immediately on Samsung and iPhone.",
+      "verified_purchase": true,
+      "moderation_status": "approved",
+      "created_at": "2026-11-12T10:09:00.931Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "coup-1",
+      "code": "KORA5",
+      "description": "5% discount on orders above ₦50,000 (max ₦35,000)",
+      "discount_type": "percentage",
+      "discount_value": 5,
+      "min_order_ngn": 50000,
+      "max_discount_ngn": 35000,
+      "usage_limit": 500,
+      "used_count": 1,
+      "is_active": true,
+      "expires_at": null,
+      "created_at": "2026-10-17T10:09:00.931Z"
+    },
+    {
+      "id": "coup-2",
+      "code": "LAGOS5000",
+      "description": "₦5,000 instant off orders above ₦40,000",
+      "discount_type": "fixed",
+      "discount_value": 5000,
+      "min_order_ngn": 40000,
+      "max_discount_ngn": 5000,
+      "usage_limit": 200,
+      "used_count": 0,
+      "is_active": true,
+      "expires_at": null,
+      "created_at": "2026-10-27T10:09:00.931Z"
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "wish-1",
+      "user_id": "user-cust-1",
+      "product_id": "prod-macbook-air-m3",
+      "created_at": "2026-11-13T10:09:00.931Z"
+    }
+  ],
+  "newsletter_subscribers": [
+    {
+      "id": "news-1",
+      "email": "ada@example.ng",
+      "is_active": true,
+      "subscribed_at": "2026-11-02T10:09:00.931Z"
+    }
+  ],
+  "contact_messages": [],
+  "admin_activity_logs": [
+    {
+      "id": "911d0b7c-2548-4da9-819f-633657e5eee8",
+      "admin_user_id": "user-admin-1",
+      "admin_email": "admin@koratech.ng",
+      "action": "DELETED_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "d69c8553-5f1a-4e6e-a533-7a48ddffd854",
+      "details": {
+        "name": "Verify Laptop Upload TEST-VERIFY-1794843722092"
+      },
+      "created_at": "2026-11-16T15:42:03.137Z"
+    },
+    {
+      "id": "cd374d2c-deb6-4357-b1d9-372bea1ecafd",
+      "admin_user_id": "user-admin-1",
+      "admin_email": "admin@koratech.ng",
+      "action": "CREATED_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "d69c8553-5f1a-4e6e-a533-7a48ddffd854",
+      "details": {
+        "name": "Verify Laptop Upload TEST-VERIFY-1794843722092",
+        "price_ngn": 1250000
+      },
+      "created_at": "2026-11-16T15:42:02.143Z"
+    },
+    {
+      "id": "8f6c6099-d932-45f5-a744-e7e7e95f19cf",
+      "admin_user_id": "user-admin-1",
+      "admin_email": "admin@koratech.ng",
+      "action": "DELETED_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "374ffd6b-bd6e-4f7c-82a1-c64cc7d2949d",
+      "details": {
+        "name": "Verify Laptop Upload TEST-VERIFY-1794843703127"
+      },
+      "created_at": "2026-11-16T15:42:01.720Z"
+    },
+    {
+      "id": "e958a1fe-8019-4a2b-8919-070b57c4f231",
+      "admin_user_id": "user-admin-1",
+      "admin_email": "admin@koratech.ng",
+      "action": "CREATED_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "374ffd6b-bd6e-4f7c-82a1-c64cc7d2949d",
+      "details": {
+        "name": "Verify Laptop Upload TEST-VERIFY-1794843703127",
+        "price_ngn": 1250000
+      },
+      "created_at": "2026-11-16T15:41:43.234Z"
+    },
+    {
+      "id": "log-1",
+      "admin_user_id": "user-admin-1",
+      "admin_email": "admin@koratech.ng",
+      "action": "SHIPPED_ORDER",
+      "entity_type": "order",
+      "entity_id": "ord-1002",
+      "details": {
+        "order_number": "KT-20261113-7390",
+        "tracking_number": "KT-LG-90144"
+      },
+      "created_at": "2026-11-15T10:09:00.931Z"
+    }
+  ]
+}
